@@ -4,4 +4,4 @@ def digits_to_integer(digits):
         result = result * 10 + digit
     return result
 
-print(list_to_integer([8, 3, 5, 1]))
+print(digits_to_integer([8, 3, 5, 1]))
