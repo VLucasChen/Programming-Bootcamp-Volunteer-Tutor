@@ -27,6 +27,6 @@ def Start_game():
             print(f"You make a correct guess!")
             break
 
-        give_feedback(guess, target)
+        Display_feedback(guess, target)
 
 Start_game()
