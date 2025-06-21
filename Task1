@@ -1,0 +1,7 @@
+def list_to_integer(digits):
+    result = 0
+    for digit in digits:
+        result = result * 10 + digit
+    return result
+
+print(list_to_integer([8, 3, 5, 1]))
