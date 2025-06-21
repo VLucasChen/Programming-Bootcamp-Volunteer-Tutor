@@ -1,0 +1,32 @@
+import random
+
+def Make_valid_guess():
+    while True:
+        try:
+            guess = int(input("Guess a number (1-100): "))
+            if 1 <= guess <= 100:
+                return guess
+            print("Please enter a number between 1-100.")
+        except ValueError:
+            print("Please enter a valid number.")
+
+def Display_feedback(guess, target):
+    if guess < target:
+        print("Target number is Higher!")
+    elif guess > target:
+        print("Target number is Lower!")
+
+def Start_game():
+    target = random.randint(1, 100)
+
+    print("I have chosen a number between 1-100. Come on and guess it!")
+    
+    while True:
+        guess = Make_valid_guess()
+        if guess == target:
+            print(f"You make a correct guess!")
+            break
+
+        give_feedback(guess, target)
+
+Start_game()
