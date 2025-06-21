@@ -1,4 +1,4 @@
-def list_to_integer(digits):
+def digits_to_integer(digits):
     result = 0
     for digit in digits:
         result = result * 10 + digit
